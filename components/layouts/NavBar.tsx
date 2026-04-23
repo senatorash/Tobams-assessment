@@ -23,6 +23,7 @@ const NavBar = () => {
     <nav className={`${isOpen ? "sticky" : ""} top-0 z-50 bg-white`}>
       <div className="">
         <div className="flex justify-between pt-4.5 pb-4 px-4 lg:px-16 lg:py-6 items-center">
+          {/* Logo */}
           <div>
             <Link href="/">
               <Image
@@ -74,7 +75,7 @@ const NavBar = () => {
         </div>
 
         {/* NavItems */}
-        <div className="border-t border-gray-300 border px-16 py-8 hidden lg:flex md:hidden sm:hidden items-center justify-center gap-5 md:text-sm font-normal">
+        <div className="border-t border-gray-300 border px-16 py-8 hidden lg:flex md:hidden sm:hidden items-center justify-center gap-5 md:text-base font-normal">
           {navItems.map((item, index) => (
             <div key={index}>
               <Link href={item.href}>
@@ -87,8 +88,8 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="fixed top-23 left-0 right-0 bottom-0 z-50 w-full bg-background-dark px-4 py-16 text-lg">
-            <div className="h-screen flex flex-col gap-3 md:hidden">
+          <div className="fixed top-23 left-0 right-0 bottom-0 z-50 w-full bg-background-dark px-4 py-16 text-lg overflow-y-auto">
+            <div className="h-screen flex flex-col gap-3 md:flex lg:hidden">
               {navItems.map((item, index) => {
                 return (
                   <Link
@@ -105,23 +106,23 @@ const NavBar = () => {
                 );
               })}
 
-              <Link href="/" className="">
-                <button className="cursor-pointer flex items-center bg-primary py-2 md:py-2.5 px-5  text-white rounded-sm">
-                  <span className="bg-[#ddd0da] p-1 rounded-full mr-2">
-                    {/* <LuUser className="inline mr-2 p-3" /> */}
-                    <LuUser className="text-primary" />
-                  </span>
-                  Account
-                  <LuChevronDown className="inline ml-2" />
-                </button>
-              </Link>
-
-              <Link href="/" className="">
-                <button className="cursor-pointer bg-secondary px-5 py-2.5 text-white rounded-sm">
-                  Take Assessment
-                </button>
-              </Link>
-              {/* </div> */}
+              <div className="flex flex-col gap-5 mt-10">
+                <Link href="/">
+                  <button className="cursor-pointer flex items-center bg-primary py-2.5 px-12 text-white rounded-sm">
+                    <span className="bg-[#ddd0da] p-1 rounded-full mr-2">
+                      {/* <LuUser className="inline mr-2 p-3" /> */}
+                      <LuUser className="text-primary" />
+                    </span>
+                    Account
+                    <LuChevronDown className="inline ml-2" />
+                  </button>
+                </Link>
+                <Link href="/">
+                  <button className="cursor-pointer bg-secondary px-10 py-2.5 text-white rounded-sm">
+                    Take Assessment
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         )}

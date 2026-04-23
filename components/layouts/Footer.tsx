@@ -84,6 +84,8 @@ const Footer = () => {
               })}
             </ul>
           </div>
+
+          {/* Company */}
           <div className="lg:mx-auto max-w-sm">
             <ul className="flex flex-col gap-4">
               <li className="font-bold text-xl">Company</li>
@@ -103,6 +105,8 @@ const Footer = () => {
               })}
             </ul>
           </div>
+
+          {/* Solution */}
           <div className="lg:mx-auto max-w-xs">
             <ul className="flex flex-col gap-4">
               <li className="font-bold font-xl">Solution</li>
@@ -150,7 +154,7 @@ const Footer = () => {
               <img
                 src="/icons/email.png"
                 alt="Email"
-                className="h-4 w-4 inline mr-2"
+                className="h-3 w-4.5 inline mr-2"
               />
               theteam@tobamsgroup.com
             </p>
@@ -166,6 +170,7 @@ const Footer = () => {
         </div>
 
         <hr className="border-t border-solid border-[#DDD0DA]/10" />
+        {/* Footer Links */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
           <p className="text-base font-light text-center lg:text-start flex-1 order-2 lg:order-1">
             Copyright &copy; {new Date().getFullYear()} Tobams Group. All rights
@@ -173,7 +178,7 @@ const Footer = () => {
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-3 mx-auto order-1 lg:order-2">
             <Link href="/" className="order-3 lg:order-1">
-              <button className="font-light text-base decoration-0 underline cursor-pointer ">
+              <button className="font-light text-base decoration-1 underline cursor-pointer">
                 Terms and Condition
               </button>
             </Link>
