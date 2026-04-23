@@ -1,3 +1,5 @@
+import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
+
 const testimonials = [
   {
     name: "Aisha Yusuf",
@@ -58,14 +60,10 @@ const Testimonials = () => {
         </div>
         <div className="flex justify-end gap-3 mt-8 items-end">
           <button className="bg-secondary/10 p-2 rounded-md">
-            <img
-              src="/icons/Vector (1).png"
-              alt="Previous"
-              className="h-4 w-4"
-            />
+            <LuChevronLeft className="text-secondary w-5 h-5" />
           </button>
           <button className="bg-secondary/10 p-2 rounded-md">
-            <img src="/icons/Vector (2).png" alt="Next" className="h-4 w-4" />
+            <LuChevronRight className="text-secondary w-5 h-5" />
           </button>
         </div>
       </div>

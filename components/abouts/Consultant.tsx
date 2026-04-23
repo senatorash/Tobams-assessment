@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LuArrowUpRight } from "react-icons/lu";
 
 const trainingCourses = [
   {
@@ -57,11 +58,11 @@ const Consultant = () => {
             ))}
           </div>
 
-          <Link href="/services">
+          <Link href="/">
             <button className="flex items-center bg-primary text-white px-6 py-2.5 rounded-sm mt-6 cursor-pointer">
               Learn More
               <span className="ml-2">
-                <img src="/icons/vector.png" alt="icon" className="h-2 w-2" />
+                <LuArrowUpRight />
               </span>
             </button>
           </Link>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-[url('/images/heroImage.jpg')] bg-cover bg-center h-100 lg:min-h-screen flex flex-col items-center justify-center py-10 px-6 lg:px-16 lg:py-28 gap-12">
+    <section className="relative bg-[url('/images/heroImage.jpg')] bg-cover bg-center h-100 lg:min-h-screen flex flex-col items-center justify-center py-10 px-6 md:px-16 md:py-28 gap-12">
       <div className="absolute inset-0 bg-black/50" />
       <div className="absolute z-40 flex flex-col items-center justify-center gap-10">
         <div className=" flex flex-col items-center justify-center">

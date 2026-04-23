@@ -56,7 +56,7 @@ const LMS = () => {
               })}
             </ul>
           </div>
-          <Link href="/services">
+          <Link href="/">
             <button className="flex items-center bg-primary text-white px-6 py-2.5 rounded-sm mt-6 cursor-pointer">
               Learn More
               <span className="ml-2">
