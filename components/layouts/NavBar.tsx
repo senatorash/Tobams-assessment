@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { LuChevronDown, LuUser } from "react-icons/lu";
@@ -14,20 +17,22 @@ const navItems = [
 ];
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav>
-      <div className="flex justify-between px-16 py-6 items-center">
+      <div className="flex justify-between pt-4.5 pb-4 px-3 lg:px-16 lg:py-6 items-center">
         <div>
           <Image
             alt="tobams_logo"
             src="/images/tobams.png"
-            width={50}
-            height={50}
-            className="h-16 w-[167.65px]"
+            width={200}
+            height={200}
+            className="w-auto h-auto"
           />
         </div>
 
-        <div className="flex gap-4 items-center">
+        <div className="gap-4 items-center hidden lg:flex md:flex sm:hidden">
           <div>
             <Link href="/" className="">
               <button className="cursor-pointer flex items-center bg-primary py-2.5 px-5 text-white rounded-sm">

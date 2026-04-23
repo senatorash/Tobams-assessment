@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/layouts/NavBar";
+import Footer from "@/components/layouts/Footer";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
