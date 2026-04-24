@@ -190,7 +190,7 @@ const Footer = () => {
               </Link>
             </div>
             <Link href="/" className="order-3 lg:order-1 ml-10 lg:ml-0 md:mx-5">
-              <button className="font-light text-base decoration-0 underline cursor-pointer ">
+              <button className="font-light text-base decoration-1 underline cursor-pointer ">
                 Terms and Condition
               </button>
             </Link>
