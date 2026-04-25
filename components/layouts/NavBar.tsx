@@ -88,8 +88,8 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="fixed top-23 left-0 right-0 bottom-0 z-50 w-full bg-background-dark px-4 py-16 text-lg overflow-y-auto">
-            <div className="h-screen flex flex-col gap-3 md:flex lg:hidden">
+          <div className="fixed top-23 left-0 right-0 bottom-0 z-50 w-full bg-background-dark px-4 py-16 text-lg overflow-y-auto h-screen md:flex lg:hidden">
+            <div className="flex flex-col gap-3">
               {navItems.map((item, index) => {
                 return (
                   <Link
